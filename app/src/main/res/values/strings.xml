@@ -1,0 +1,216 @@
+<resources>
+
+    <string name="app_name">Quantum VPN</string>
+    <string name="app_name_version">Quantum VPN - v1.0.3</string>
+
+    <string name="state_user_vpn_permission">Waiting for user permission to start VPN</string>
+    <string name="no_keystore_cert_selected">You must choose a user certificate</string>
+    <string name="no_error_found">No errors found</string>
+    <string name="ipv4_format_error">Unable to resolve IPv4 address</string>
+    <string name="custom_route_format_error">Unable to resolve custom route</string>
+    <string name="route_rejected">Android refused routing</string>
+    <string name="cancel_connection">disconnect</string>
+    <string name="title_cancel">cancel confirm</string>
+    <string name="cancel_connection_query">Disconnected connected VPN / Cancel connection attempt?</string>
+    <string name="tun_error_helpful">On some custom ICS system versions, the permissions for /dev/tun may be incorrect
+        or there may be no such file at all. CM9 system users please try to fix the permissions through the repair
+        option in the program settings.
+    </string>
+    <string name="tun_open_error">Failed to open tun interface</string>
+    <string name="error">error:</string>
+    <string name="last_openvpn_tun_config">Opening tun device:</string>
+    <string name="local_ip_info">local IPv4： %1$s/%2$d IPv6： %3$s MTU： %4$d</string>
+    <string name="dns_server_info">DNS server: %1$s, domain name: %2$s</string>
+    <string name="routes_info_incl">route: %1$s %2$s</string>
+    <string name="routes_info_excl">Excluded route： %1$s %2$s</string>
+    <string name="routes_debug">VpnService installation route : %1$s %2$s</string>
+    <string name="ip_not_cidr">Interface information obtained %1$s as well as %2$s，Use the second address as the remote
+        address. use /32 As a local mask. The mode given by the VPN is \"%3$s\"。
+    </string>
+    <string name="route_not_cidr">Unable to %1$s 和 %2$s As CIDR Formal routing that will be used /32 Subnet mask.
+    </string>
+    <string name="route_not_netip">Correct routing %1$s/%2$s for %3$s/%2$s</string>
+    <string name="keychain_access">Cannot access the Android keychain certificate. This may be due to a firmware upgrade
+        or by restoring the backed up application/software settings. Edit the VPN profile and re-select the certificate
+        in the basic settings to recreate the certificate access.
+    </string>
+    <string name="opentun_no_ipaddr">No IP information, refuse to open tun device</string>
+    <string name="pkcs12_file_encryption_key">PKCS12 file encryption key</string>
+    <string name="private_key_password">Private key password</string>
+    <string name="password">password</string>
+    <string name="building_configration">Generating configuration</string>
+    <string name="netstatus">network status: %s</string>
+    <string name="keychain_nocacert">No CA certificate was found in the Android keystore. Possible verification
+        failed.
+    </string>
+    <string name="mobile_info">%10$s %9$s running on %3$s %1$s (%2$s), Android %6$s (%7$s) API %4$d, ABI %5$s, (%8$s)
+    </string>
+    <string name="error_rsa_sign">With the Android keystore %1$s Error while signing： %2$s</string>
+    <string name="warn_no_dns">If you are not using a DNS server and cannot resolve the domain name, consider setting up
+        a DNS server. Note that even if you don\'t have a DNS server set up, the proxy settings you set for mobile
+        networks and Wi-Fi are also valid.
+    </string>
+    <string name="dns_add_error">Unable to add DNS server \"%1$s\", %2$s has rejected your operation.</string>
+    <string name="ip_add_error">Unable to configure IP address %1$s, rejected by system: %2$s</string>
+    <string name="getproxy_error">Error getting proxy settings：%s</string>
+    <string name="using_proxy">Using a proxy %1$s %2$d</string>
+    <string name="minidump_generated">VPN unexpectedly crashes. It is recommended that you send a dump file to the
+        developer using the Send Dump File feature in the main menu.
+    </string>
+    <string name="notifcation_title">Quantum VPN - %s</string>
+    <string name="session_ipv4string">%1$s - %2$s</string>
+    <string name="session_ipv6string">%1$s - %3$s, %2$s</string>
+    <string name="state_connecting">connecting</string>
+    <string name="state_wait">Waiting for server response</string>
+    <string name="state_auth">In verification</string>
+    <string name="state_get_config">Getting client configuration</string>
+    <string name="state_assign_ip">Assigning IP address</string>
+    <string name="state_add_routes">Add route</string>
+    <string name="state_connected">connected</string>
+    <string name="state_disconnected">disconnect</string>
+    <string name="state_reconnecting">Reconnecting</string>
+    <string name="state_exiting">Exiting</string>
+    <string name="state_noprocess">Not running</string>
+    <string name="state_resolve">Resolving hostname</string>
+    <string name="state_tcp_connect">connecting(TCP)</string>
+    <string name="state_auth_failed">verification failed</string>
+    <string name="state_nonetwork">Waiting for available network</string>
+    <string name="statusline_bytecount">↓%2$s/s %1$s - ↑%4$s/s %3$s</string>
+    <string name="notifcation_title_notconnect">not connected</string>
+    <string name="jelly_keystore_alphanumeric_bug">Some versions of Android 4.1 have problems if the name of the
+        keystore certificate contains non-alphanumeric characters (such as spaces, underscores, or dashes). Please try
+        to re-import a certificate that does not contain special characters
+    </string>
+    <string name="built_by">Built by %s</string>
+    <string name="debug_build">Debug version</string>
+    <string name="official_build">official version</string>
+    <string name="screenoff_pause">Pause when the screen is closed: less than %1$s in %2$s seconds</string>
+    <string name="screen_nopersistenttun">Warning: The VPN does not have "persistent tun device" enabled. When the
+        screen is closed, network traffic will not go through the VPN tunnel, but will go to Wi-Fi or mobile network.
+    </string>
+    <string name="pauseVPN">time out</string>
+    <string name="resumevpn">carry on</string>
+    <string name="state_userpause">Suspended as requested by the user VPN</string>
+    <string name="state_screenoff">VPN Pause - screen off</string>
+    <string name="cannotparsecert">Unable to display certificate information</string>
+    <string name="keyChainAccessError">Keychain access error： %s</string>
+    <string name="unhandled_exception">Unhandled exception： %1$s\n\n%2$s</string>
+    <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
+    <string name="ip_looks_like_subnet">The VPN topology "%3$s" is specified, but using ifconfig %1$s %2$s looks more
+        like the IP address of a netmask. Assume the topology of the "subnet".
+    </string>
+    <string name="allowed_vpn_apps_info">Allow VPN applications: %1$s</string>
+    <string name="disallowed_vpn_apps_info">VPN application not allowed：%1$s</string>
+    <string name="app_no_longer_exists">Remove it from the application\'s allow forbidden list, no longer install the
+        package %s
+    </string>
+    <string name="remote_no_server_selected">You need to define and enable at least one remote server.</string>
+    <string name="ignore_multicast_route">Ignore multicast routing:%s</string>
+    <string name="service_restarted">Restart the VPN service (application crash - may be a real crash or was killed due
+        to insufficient memory)
+    </string>
+    <string name="no_allowed_app">No allowed applications have been added. Join this app (%s) to ensure at least one app
+        in the list of allowed apps to block all other apps
+    </string>
+    <string name="abi_mismatch">Preferred native ABI precedence of this device (%1$s) and ABI reported by native
+        libraries (%2$s) mismatch
+    </string>
+    <string name="months_left">%d month used</string>
+    <string name="days_left">%d days have been used</string>
+    <string name="hours_left">%d hours used</string>
+    <string name="permission_revoked">VPN permissions are revoked by the operating system (such as other VPN programs
+        started), VPN is stopped
+    </string>
+    <string name="missing_tlsauth">Tls-auth file is missing</string>
+    <string name="missing_certificates">Missing user certificate or user certificate key file</string>
+    <string name="missing_ca_certificate">Missing CA certificate</string>
+    <string name="reread_log">Reread (%d) log items from the log cache file</string>
+    <string name="state_waitconnectretry">%s seconds have been waited during connection retry</string>
+    <string name="unknown_state">Unknown state</string>
+    <string name="connect_vpn">Connect VPN</string>
+    <string name="click_again">Click again</string>
+    <string name="network_error">Network Error</string>
+    <string name="network_error_message">Network is Not Available , Please check you internet connection</string>
+    <string name="ok">OK</string>
+    <string name="no_vpn_support_image">Error start VPN</string>
+    <string name="notification_title">Quantum VPN -</string>
+    <string name="tap_to_connect">Tap to connect</string>
+    <string name="tap_to_disconnect">Tap to disconnect</string>
+    <string name="connecting">Connecting</string>
+    <string name="vpn_is_ready">VPN is ready</string>
+    <string name="Auto_select_server">Auto select Server</string>
+    <string name="take_too_long">Connecting takes too long to connect, Please refresh the server and try again</string>
+
+    <string name="you_are_connected_to">Connected location </string>
+
+    <string name="aboutApp">
+        <b>Introduction</b>
+        \nQuantum VPN lets you easily to connect to a number of free VPN server around the world with just
+        a single tap!
+        The list of servers the application connect is http://www.vpngate.net VPN Gate Academic Experiment Project is an
+        online service as an academic research at Graduate School of University of Tsukuba, Japan. The purpose of this
+        research is to expand the knowledge of \"Global Distributed Public VPN Relay Servers\".
+        \n\n
+        <b>Why VPN Gate?</b>
+        \nYou can take these advantages by using VPN Gate:
+        \n * It is about 8531 Public VPN Relay Servers by volunteers around the world.
+        \n * You can disguise your IP address to hide your identity while surfing the Internet.
+        \n * You can protect yourself by utilizing its strong encryption while using public Wi-Fi.
+        \nUnlike traditional VPN services, VPN Gate can get through most firewalls.
+        \nVPN Gate is free of charge. Not a single registration is required.
+        \n\n
+        <b>License</b>
+        \n
+        <i>Free Software!</i>
+        \nhttps://www.gnu.org/licenses/gpl-3.0.en.html
+        \nThis application uses some Easy VPN methods
+        \n * Easy VPN-Free https://github.com/MaxSmile/EasyVPN-Free
+        \nThis application uses the following components; see the source code for full details on the licenses.
+        \n * OpenVPN for Android https://github.com/schwabe/ics-openvpn under GPLv2
+        \n * Material Drawer https://github.com/zsmb13/MaterialDrawerKt
+        \n * Fast-Android-Networking https://github.com/amitshekhariitbhu/Fast-Android-Networking under Apache 2.0
+        \n\n
+    </string>
+    <string name="i_recommend">Hey use this VPN app i recommend it for you</string>
+    <string name="playstore_link">https://play.google.com/store/apps/details?id=com.sydev.vpnsyria</string>
+    <string name="action_share_app">choose app</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="connectionCatag">Auto start on boot</string>
+    <string name="connectionCatagDesc">Connect on start</string>
+    <string name="connectsum">Connect when Quantum VPN is started</string>
+    <string name="autoSwitch">Automatic switching</string>
+    <string name="autoSwitchDesc">Automatic switching to the same country server after some seconds, if the connection did not start</string>
+
+    <string name="countryPriorityCatag">Country priority</string>
+    <string name="contryPriTitle">Choose your favorite country</string>
+    <string name="countryPriDesc">if not enabled then, Quantum VPN will choose the best Server</string>
+    <string name="choose_country">Choose country</string>
+
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="freedom">Going to freedom</string>
+    <string name="general">General</string>
+    <string name="home">Home</string>
+    <string name="choose_server">Choose a server</string>
+    <string name="refresh">Refresh servers</string>
+    <string name="problemAndSolution">Problem &amp; solution</string>
+    <string name="report">Report an issue</string>
+    <string name="tellFriends">Tell your friends</string>
+    <string name="Preference">Preference</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="errorConnecting">Error connecting to Server, we will refresh the servers after 5 seconds</string>
+    <string name="downloading_servers">Downloading Servers</string>
+    <string name="update_servers">Update Servers</string>
+    <string name="update_servers_desc">Update serves every time the application starts, if not enabled we will refresh
+        them every 2 hours
+    </string>
+    <string name="if_the_connecting_take_so_long_try_to_refresh_the_servers_or_use_another_server">if the connecting
+        take so long, try to refresh the servers or use another server
+    </string>
+    <string name="rate_message">Hey, you seems to like this app, would you like give us a rate</string>
+    <string name="rate">RATE</string>
+    <string name="no_thanks">NO THANKS</string>
+    <string name="dont_ask">DO NOT ASK AGAIN</string>
+</resources>

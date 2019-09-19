@@ -1,0 +1,44 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/connectionCatag">
+
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="@string/connectionCatagDesc"
+                android:summary="@string/connectsum"
+                android:key="connectOnStart" android:icon="@drawable/ic_connect_on_start"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/autoSwitch">
+        <CheckBoxPreference
+                android:defaultValue="true"
+                android:title="@string/autoSwitch"
+                android:summary="@string/autoSwitchDesc"
+                android:key="autoSwitch" android:icon="@drawable/ic_switch"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:key="countryPriorityCategory"
+            android:title="@string/countryPriorityCatag">
+        <CheckBoxPreference
+                android:title="@string/contryPriTitle"
+                android:defaultValue="false"
+                android:summary="@string/countryPriDesc"
+                android:key="countryPriority" android:icon="@drawable/ic_servers"/>
+        <ListPreference
+                android:dependency="countryPriority"
+                android:title="@string/choose_country"
+                android:key="selectedCountry"/>
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory
+            android:title="@string/update_servers">
+
+        <CheckBoxPreference
+                android:title="@string/update_servers" android:key="update_servers" android:defaultValue="false"
+                android:summary="@string/update_servers_desc"
+                android:icon="@drawable/ic_refresh"/>
+    </PreferenceCategory>
+-->
+</PreferenceScreen>

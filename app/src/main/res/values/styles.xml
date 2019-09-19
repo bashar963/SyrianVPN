@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/md_white_1000</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+    </style>
+
+    <style name="AppThemeFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+    </style>
+
+
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference"/>
+        <attr name="cpb_selectorComplete" format="reference"/>
+        <attr name="cpb_selectorError" format="reference"/>
+        <attr name="cpb_textComplete" format="string"/>
+        <attr name="cpb_textIdle" format="string"/>
+        <attr name="cpb_textError" format="string"/>
+        <attr name="cpb_textProgress" format="string"/>
+        <attr name="cpb_colorProgress" format="color"/>
+        <attr name="cpb_colorIndicator" format="color"/>
+        <attr name="cpb_colorIndicatorBackground" format="color"/>
+        <attr name="cpb_iconError" format="reference"/>
+        <attr name="cpb_iconComplete" format="reference"/>
+        <attr name="cpb_cornerRadius" format="dimension"/>
+        <attr name="cpb_paddingProgress" format="dimension"/>
+    </declare-styleable>
+</resources>

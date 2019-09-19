@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.sydev.vpnsyria">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <dist:module dist:instant="true"/>
+
+    <application
+            android:name="com.sydev.vpnsyria.VPNApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:name="com.sydev.vpnsyria.ui.activities.SettingsActivity"
+                android:label="@string/title_activity_settings"
+                android:parentActivityName="com.sydev.vpnsyria.ui.activities.HomeActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.sydev.vpnsyria.ui.activities.HomeActivity"/>
+        </activity>
+        <activity android:name="com.sydev.vpnsyria.ui.activities.AboutActivity">
+        </activity>
+        <activity android:name="com.sydev.vpnsyria.ui.activities.ServersActivity">
+        </activity>
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-9576521051407477~6635265426"/>
+        <activity android:name="com.sydev.vpnsyria.ui.activities.HomeActivity">
+        </activity>
+        <activity android:name="com.sydev.vpnsyria.ui.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="de.blinkt.openvpn.core.OpenVPNService"
+                android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

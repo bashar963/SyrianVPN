@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "81289734758",
+    "firebase_url": "https://syrian-vpn-963.firebaseio.com",
+    "project_id": "syrian-vpn-963",
+    "storage_bucket": "syrian-vpn-963.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81289734758:android:0d24830600debc13",
+        "android_client_info": {
+          "package_name": "com.sydev.vpnsyria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81289734758-21vo3b2ili32dm39hqvia6hn0n0nl86n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD937Qd464jUZkEZ5Tz7v-LqBhJEalJ-f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81289734758-21vo3b2ili32dm39hqvia6hn0n0nl86n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
