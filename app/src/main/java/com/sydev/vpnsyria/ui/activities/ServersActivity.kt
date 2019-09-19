@@ -36,7 +36,7 @@ class ServersActivity : AppCompatActivity() {
             onBackPressed()
         }
         serverRepository = ServerRepository(this.application)
-        myDataSet.add(ServerItem("all",resources.getIdentifier("all","drawable",packageName),getString(R.string.Auto_select_server),getDrawable(R.drawable.ic_connect_excellent)!!))
+        myDataSet.add(ServerItem("all",resources.getIdentifier("all","drawable",packageName),getString(R.string.Auto_select_server),ContextCompat.getDrawable(this,R.drawable.ic_connect_excellent)!!))
         initList()
 
     }
@@ -81,14 +81,14 @@ class ServersActivity : AppCompatActivity() {
     }
 
     private fun parseToItemList(countryServerList: List<Servers>) {
-        for (i in 0 until countryServerList.size){
-            val serverItem=ServerItem("",0,"",getDrawable(R.drawable.ic_connect_excellent)!!)
+        for (i in countryServerList.indices){
+            val serverItem=ServerItem("",0,"",ContextCompat.getDrawable(this,R.drawable.ic_connect_excellent)!!)
             serverItem.serverId = countryServerList[i].ip!!
             serverItem.serverName = countryServerList[i].countryLong!!
             when(countryServerList[i].quality){
-                1->{serverItem.ServerStrengthRes=getDrawable(R.drawable.ic_connect_bad)!!}
-                2->{serverItem.ServerStrengthRes=getDrawable(R.drawable.ic_connect_good)!!}
-                3->{serverItem.ServerStrengthRes=getDrawable(R.drawable.ic_connect_excellent)!!}
+                1->{serverItem.ServerStrengthRes= ContextCompat.getDrawable(this,R.drawable.ic_connect_bad)!!}
+                2->{serverItem.ServerStrengthRes=ContextCompat.getDrawable(this,R.drawable.ic_connect_good)!!}
+                3->{serverItem.ServerStrengthRes=ContextCompat.getDrawable(this,R.drawable.ic_connect_excellent)!!}
             }
             var code = countryServerList[i].countryShort!!.toLowerCase()
             if (code=="do"){
